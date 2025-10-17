@@ -20,7 +20,7 @@ jobs:
                 username: ${{ secrets.USER_SERVER }}
                 key: ${{ secrets.SSH_PRIVATE_KEY }}
                 script: |
-                    cd tz-blog
+                    cd ~/tz-blog
                     git pull
                     docker-compose down
                     docker-compose up -d --build
