@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-#model
+# model
 class PostSchema(BaseModel):
     title: str
     content: str
